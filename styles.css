@@ -510,6 +510,25 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .hero-gif {
+    inset: -10% -20% auto -20%;
+    height: 110%;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-photo {
+    width: 46px;
+    height: 46px;
+    margin-top: 4px;
+  }
+
+  .hero:has(.logo-photo:hover) .eyebrow {
+    transform: none;
+  }
+
   .contact-card {
     flex-direction: column;
     align-items: flex-start;
@@ -534,5 +553,27 @@ a {
   .hero-actions {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(34px, 10vw, 48px);
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .logo-photo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-photo:hover {
+    transform: none;
+    opacity: 0.85;
+  }
+
+  .hero:has(.logo-photo:hover) .eyebrow {
+    transform: none;
   }
 }
