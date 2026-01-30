@@ -131,6 +131,13 @@ a {
   opacity: 1;
 }
 
+@media (hover: none) {
+  .logo-photo:hover {
+    transform: none;
+    opacity: 0.85;
+  }
+}
+
 .logo {
   font-family: "Fraunces", serif;
   font-size: 26px;
